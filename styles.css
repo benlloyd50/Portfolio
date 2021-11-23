@@ -1,9 +1,14 @@
 body {
-  background-color: powderblue;
+  background-color: rgb(99, 105, 106);
+  text-align: center;
+
+
 }
 h1 {
-  color: blue;
+  color: rgb(255, 172, 0);
+  font-family: "Trebuchet MS", sans-serif;
 }
 p {
-  color: red;
+  color: rgb(201, 197, 186);
+  font-family: "Garamond", monospace;
 }
