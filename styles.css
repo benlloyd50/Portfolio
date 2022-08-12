@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(99, 105, 106);
+  text-align: center;
+
+
+}
+h1 {
+  color: rgb(255, 172, 0);
+  font-family: "Trebuchet MS", sans-serif;
+}
+p {
+  color: rgb(201, 197, 186);
+  font-family: "Garamond", monospace;
+}
