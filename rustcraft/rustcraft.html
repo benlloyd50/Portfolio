@@ -3,6 +3,7 @@
 <head>
   <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
   <link rel="stylesheet" href="../styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <header>
@@ -15,17 +16,18 @@
       <li><a href="/Portfolio/rustcraft/rustcraft.html">RustCraft</a></li>
     </ul>
   </nav>
-  <a class="cta" href="#"><button>Contact</button></a>
 </header>
 
-<body>
-  <canvas id="canvas" width="480" height="360"></canvas>
-  <script src="./rustcraft.js"></script>
-  <script>
-    window.addEventListener("load", async () => {
-      await wasm_bindgen("./rustcraft_bg.wasm");
-    });
-  </script>
-</body>
+<div class="GameWindow">
+
+  <body>
+    <script src="./rustcraft.js"></script>
+    <script>
+      window.addEventListener("load", async () => {
+        await wasm_bindgen("./rustcraft_bg.wasm");
+      });
+    </script>
+  </body>
+</div>
 
 </html>
