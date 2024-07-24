@@ -1,8 +1,13 @@
+:root {
+    --green: rgb(132, 199, 69);
+    --blue: rgb(69, 188, 199);
+    --yellow: rgb(255, 181, 33);
+}
+
 body {
     width: 1000px;
     margin: 0 auto;
     background-color: #ebdbb2
-        /* font-family: Epilogue, sans-serif; */
 }
 
 .highlight {
@@ -63,12 +68,22 @@ p {
 }
 
 .nav--button {
+    cursor: pointer;
+    padding: 12px;
     border-style: dotted;
+
+    position: relative;
+    top: 0;
+    transition: top ease 0.2s;
+}
+
+.nav--button:hover {
+    top: -5px;
 }
 
 
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     padding-right: 5px;
@@ -80,7 +95,6 @@ p {
     height: 100vh;
     align-content: center;
     overflow: visible;
-    /* background-color: yellow; */
 }
 
 #project-container {
@@ -100,9 +114,10 @@ p {
 
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 
+    box-shadow: 10px 10px rgb(132, 199, 69);
     outline-style: dotted;
-    box-shadow: 12px 12px rgb(132, 199, 69);
 }
 
 .project-card__title {
@@ -128,8 +143,8 @@ p {
     height: fit-content;
     padding: 10px;
 
+    box-shadow: 6px 6px var(--yellow);
     border: dotted;
-    box-shadow: 12px 12px rgb(255, 181, 33);
 }
 
 .icon {
@@ -137,15 +152,6 @@ p {
     height: auto;
 
     cursor: pointer;
-}
-
-.iconsmall:hover {
-    filter: blur(5px);
-}
-
-.iconsmall {
-    width: 20px;
-    height: auto;
 }
 
 .resume-container {
@@ -159,9 +165,9 @@ p {
 .resume-card {
     padding: 10px;
     border-style: dotted;
-    box-shadow: 6px 6px rgb(69, 188, 199);
     min-width: 65%;
     max-width: 100%;
+    box-shadow: 6px 6px var(--blue);
 }
 
 .resume-header {
@@ -172,6 +178,7 @@ p {
 
 a:link {
     text-decoration: none;
+    color: black;
 }
 
 .dl-button {
@@ -182,7 +189,6 @@ a:link {
     border-style: dashed;
     display: grid;
     grid-template-columns: 25px 30px;
-    box-shadow: 6px 6px rgb(69, 188, 199);
     margin-bottom: 10px;
 }
 
@@ -225,4 +231,16 @@ a:link {
 .mcl {
     font-size: 11pt;
     /* font-style: ; */
+}
+
+.blue-shadow {
+    box-shadow: 6px 6px var(--blue);
+}
+
+.yellow-shadow {
+    box-shadow: 6px 6px var(--yellow);
+}
+
+.green-shadow {
+    box-shadow: 6px 6px var(--green);
 }
