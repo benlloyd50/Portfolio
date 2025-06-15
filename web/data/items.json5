@@ -1,0 +1,10 @@
+{
+    items: [
+        {
+            id: 20,
+            name: "Stick",
+            desc: "A short twisty branch.",
+            spr_idx: 3,
+        },
+    ]
+}

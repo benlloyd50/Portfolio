@@ -1,0 +1,89 @@
+({
+    // Master
+    "master.image": File (
+        path: "master_tileset.png",
+    ),
+    "master.layout": TextureAtlasLayout (
+        tile_size_x: 8,
+        tile_size_y: 8,
+        columns: 16,
+        rows: 32,
+        padding_x: 0,
+        padding_y: 0,
+        offset_x: 0,
+        offset_y: 0,
+    ),
+    "critspot": File (
+        path: "critspot.png",
+    ),
+
+    // Font
+    "font.main": File (
+        path: "Vaticanus.ttf"
+    ),
+    "font.big": File (
+        path: "ThickPixels.ttf"
+    ),
+
+    // UI
+    "ui.inventorybg": File (
+        path: "ui/inventory/background.png"
+    ),
+    "ui.cursor": File (
+        path: "ui/inventory/cursor.png"
+    ),
+    "ui.skillbg1": File (
+        path: "ui/skill menu/skill_bg1.png"
+    ),
+    "ui.skill_icon_atlas": File (
+        path: "ui/skill menu/skill_icon_atlas.png"
+    ),
+    "ui.skill_atlas_layout": TextureAtlasLayout (
+        tile_size_x: 8,
+        tile_size_y: 8,
+        columns: 8,
+        rows: 8,
+        padding_x: 0,
+        padding_y: 0,
+        offset_x: 0,
+        offset_y: 0,
+    ),
+    "ui.skill_levelup": File (
+        path: "ui/skill menu/level_up_banner.png"
+    ),
+    "blue": File (
+        path: "ui/blue.png"
+    ),
+
+    // Items
+    "items.atlas": File (
+        path: "items_atlas.png"
+    ),
+    "items.layout": TextureAtlasLayout (
+        tile_size_x: 8,
+        tile_size_y: 8,
+        columns: 16,
+        rows: 16,
+        padding_x: 0,
+        padding_y: 0,
+        offset_x: 0,
+        offset_y: 0,
+    ),
+
+    // Sound
+    "all.sounds": Files (
+        paths: [
+            "sounds/bush_impact.ogg",
+            "sounds/bush_death.ogg",
+            "sounds/combo1.ogg",
+            "sounds/combo2.ogg",
+            "sounds/combo3.ogg",
+            "sounds/combo4.ogg",
+            "sounds/combo5.ogg",
+            "sounds/pickup1.ogg",
+            "sounds/pickup2.ogg",
+            "sounds/pickup3.ogg",
+            "sounds/pickup4.ogg",
+        ],
+    ),
+})
