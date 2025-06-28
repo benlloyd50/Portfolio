@@ -51,6 +51,25 @@
     "ui.skill_levelup": File (
         path: "ui/skill menu/level_up_banner.png"
     ),
+    "ui.plus": File (
+        path: "ui/plus.png"
+    ),
+    "ui.test_guy": File (
+        path: "ui/test_guy.png"
+    ),
+    "ui.gray_box" : File (
+        path: "ui/input box.png"
+    ),
+    "ui.text_cursor" : File (
+        path: "ui/text_cursor.png"
+    ),
+    "ui.submit": File (
+        path: "ui/submit.png"
+    ),
+    "ui.submit_pressed": File (
+        path: "ui/submit_pressed.png"
+    ),
+
     "blue": File (
         path: "ui/blue.png"
     ),
@@ -68,6 +87,11 @@
         padding_y: 0,
         offset_x: 0,
         offset_y: 0,
+    ),
+
+    // World Objects
+    "talltree": File (
+        path: "tall_tree1.png"
     ),
 
     // Sound
