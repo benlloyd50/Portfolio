@@ -2378,7 +2378,10 @@ async function __wbg_init(module_or_path) {
 
     __wbg_init_memory(imports);
 
+    console.log("Loading the module...");
     const { instance, module } = await __wbg_load(await module_or_path, imports);
+    console.log("Module loaded.");
+    document.getElementById("Loading").remove();
 
     return __wbg_finalize_init(instance, module);
 }
