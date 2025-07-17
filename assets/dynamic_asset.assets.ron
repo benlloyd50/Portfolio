@@ -1,7 +1,7 @@
 ({
     // Master
     "master.image": File (
-        path: "master_tileset.png",
+        path: "sprites/master_tileset.png",
     ),
     "master.layout": TextureAtlasLayout (
         tile_size_x: 8,
@@ -14,10 +14,10 @@
         offset_y: 0,
     ),
     "critspot": File (
-        path: "critspot.png",
+        path: "sprites/critspot.png",
     ),
     "idle.image": File (
-        path: "idle1.png",
+        path: "sprites/idle1.png",
     ),
     "idle.layout": TextureAtlasLayout (
         tile_size_x: 8,
@@ -32,10 +32,13 @@
 
     // Font
     "font.main": File (
-        path: "Vaticanus.ttf"
+        path: "ui/Juliett-Regular.ttf"
     ),
     "font.big": File (
-        path: "ThickPixels.ttf"
+        path: "ui/ThickPixels.ttf"
+    ),
+    "font.pixel": File (
+        path: "ui/Vaticanus.ttf"
     ),
 
     // UI
@@ -89,7 +92,7 @@
 
     // Items
     "items.atlas": File (
-        path: "items_atlas.png"
+        path: "sprites/items_atlas.png"
     ),
     "items.layout": TextureAtlasLayout (
         tile_size_x: 8,
@@ -103,8 +106,10 @@
     ),
 
     // World Objects
-    "talltree": File (
-        path: "tall_tree1.png"
+    "raw.sprites": Files (
+        paths: [
+            "sprites/tall_tree1.png",
+        ]
     ),
 
     // Sound
@@ -122,6 +127,9 @@
             "sounds/pickup3.ogg",
             "sounds/pickup4.ogg",
             "sounds/tree_fall.ogg",
+            "sounds/chop_tree1.ogg",
+            "sounds/chop_tree2.ogg",
+            "sounds/stone_impact1.ogg",
         ],
     ),
 })
